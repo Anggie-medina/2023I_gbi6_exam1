@@ -16,5 +16,6 @@ for file in $archivos; do
     columns=$(head -n 1 "$file" | tr ',' '\n' | wc -l)
 
     # Imprimir resultados
-    echo "Archivo: $filename"
-    echo "Número de filas: $rows"
+    echo "Archivo: $filename","Número de filas: $rows","Numero de columnas: $columns" >> denint.csv
+
+done
