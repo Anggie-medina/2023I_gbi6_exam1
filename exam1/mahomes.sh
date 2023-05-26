@@ -1,6 +1,6 @@
 # Archivo de entrada y directorio de salida
-sitescsv="/c/Users/Mika/Documents/GitHub/2023I_gbi6_exam1/exam1/data/mahomes"
-directorio="/c/Users/User/Downloads/Bioinfo/2023I_gbi6_exam1/exam1"
+sitescsv="/c/Users/Mika/Documents/GitHub/2023I_gbi6_exam1/exam1/data/mahomes/sites.csv"
+directorio="/c/Users/Mika/Documents/GitHub/2023I_gbi6_exam1/exam1"
 
 # Extraer las columnas y guardar en pdb.csv
 cut -d ',' -f 5,18,21 "$sitescsv" > "$directorio/pdb.csv"
