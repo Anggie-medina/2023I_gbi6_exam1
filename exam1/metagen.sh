@@ -1,5 +1,14 @@
-# Contar registros con nivel de especies en infants_metagenome.txt
-grep -c ";s__" data/metagen/infants_metagenome.txt
+#Pregunta 5
+cd data/metagen
 
-# Realizar la búsqueda de fragmentos de interés en mygenomemap.sam y guardarlos en gata.txt
-grep -e "TATA" -e "GAGA" -e "GATA" data/metagen/mygenomemap.sam > data/metagen/gata.txt
+grep "s__" infants_metagenome.txt | wc -l
+
+echo "TATA" > gata.txt
+grep -o "\w*TATA\w*" mygenomemap.sam >> gata.txt
+
+echo "GAGA" > gata.txt
+grep -o "\w*GAGA\w*" mygenomemap.sam >> gata.txt
+
+echo "GATA" > gata.txt
+grep -o "\w*GATA\w*" mygenomemap.sam >> gata.txt
+
