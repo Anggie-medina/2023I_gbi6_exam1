@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 from collections import Counter
 
 def get_source_info(accession):
-    Entrez.email = "your_email@example.com"  # Reemplaza con tu dirección de correo electrónico
+    Entrez.email = "anggie.medina@est.ikiam.edu.ec"
     handle = Entrez.efetch(db="nucleotide", id=accession, retmode="xml")
     record = Entrez.read(handle)
     handle.close()
@@ -26,7 +26,7 @@ def Source(accessions):
     species_df.to_csv("results/source.csv", index=False)
 
 def get_sequence(accession):
-    Entrez.email = "your_email@example.com"  # Reemplaza con tu dirección de correo electrónico
+    Entrez.email = "anggie.medina@est.ikiam.edu.ec"
     handle = Entrez.efetch(db="nucleotide", id=accession, rettype="fasta", retmode="text")
     record = SeqIO.read(handle, "fasta")
     handle.close()
