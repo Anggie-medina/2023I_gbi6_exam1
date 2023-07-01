@@ -1,5 +1,5 @@
 import requests
-from Bio import Entrez, SeqIO
+from Bio  import Entrez, SeqIO
 from Bio.SeqUtils import ProtParam
 import pandas as pd
 import seaborn as sns
