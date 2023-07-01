@@ -1,12 +1,14 @@
 #_________________ Función 1
+import numpy as np
+np.random.seed(20)
 def build_population(N, p):
     population = []
     for i in range(N):
         allele1 = "A"
-        if scipy.random.rand() > p:
+        if np.random.random() > p:
             allele1 = "a"
         allele2 = "A"
-        if scipy.random.rand() > p:
+        if np.random.random() > p:
             allele2 = "a"
         population.append((allele1, allele2))
     return population
